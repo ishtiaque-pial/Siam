@@ -51,7 +51,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AdapterHolder> {
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    listener.onItemClick(modelArrayList.get(getAdapterPosition()).getName());
+                    listener.onItemClick(modelArrayList.get(getAdapterPosition()).stringArrayList);
                 }
             });
         }
